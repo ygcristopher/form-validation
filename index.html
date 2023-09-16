@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+
+</head>
+
+<body>
+    <aside>
+    <h1>Form com validação Js</h1>
+    <form action="" class="form" id="form">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" placeholder="Digite seu nome">
+
+        <label for="date">Idade:</label>
+        <input type="date" id="date" min="1950-01-01" max="2023-12-31" />
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
+
+        <label for="password">Senha:</label>
+        <input type="password" name="password" id="password" placeholder="Digite sua senha">
+
+        <label for="job">Situação de trabalho:</label>
+        <select name="job" id="job">
+            <option value="">Está buscando emprego?</option>
+            <option value="sim">Sim</option>
+            <option value="não">Não</option>
+        </select>
+
+        <label for="message">Mensagem:</label>
+        <textarea name="message" id="textarea" placeholder="Porque deveriamos te contratar?"></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <div id="result"></div>
+    <div id="success"></div>
+    
+</aside>
+    <main>
+        <div id="preview"></div>
+    </main>
+</body>
+<script src="./script.js"></script>
+</html>
