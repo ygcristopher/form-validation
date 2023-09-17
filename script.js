@@ -50,3 +50,18 @@ document.addEventListener("DOMContentLoaded", function () {
 })
 
 
+document.getElementById("loginForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Evita que o formulário seja enviado automaticamente
+
+    // Aqui você pode realizar a validação do nome de usuário e senha, por exemplo:
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
+
+    // Verifique as credenciais (substitua isso pela sua lógica de autenticação)
+    if (username === "Duda" && password === "9090") {
+        // Redirecione para outra página após o login (substitua "outra_pagina.html" pelo nome do arquivo desejado)
+        window.location.href = "index.html";
+    } else {
+        alert("Nome de usuário ou senha incorretos");
+    }
+});
